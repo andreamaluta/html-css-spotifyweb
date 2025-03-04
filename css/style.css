@@ -67,10 +67,13 @@ button{
 
 .navigation{
     font-size: 16px;
+    font-weight: 600;
+    color: rgb(149, 149, 149);
 }
 
 .navigation img{
     width: 2em;
+    margin-right: 5px;
 }
 
 .navigation .navigation-pos{
@@ -80,4 +83,39 @@ button{
     padding-left: 15px;
 }
 
+.navigation-select{
+    border-left: 3px solid rgba(163,240,46);
+}
+
+.navigation-select-hidden{
+    border-left: 3px solid transparent
+}
+
+/* side bar palylist */
+
+.playlist{
+    margin-top: 25px;
+    padding-left: 15px;
+}
+
+.playlist ul{
+    list-style: none;
+}
+
+.playlist ul li:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.playlist ul li{
+    margin-top: 15px;
+    font-weight: 600;
+    color: rgb(149, 149, 149);
+}
+
+.playlist ul li i{
+    font-size: 2.5em;
+    margin-right: 5px;
+    color: white;
+}
 
