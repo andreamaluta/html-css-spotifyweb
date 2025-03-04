@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
 main{
     height: calc(100vh - 100px);
     background-color: goldenrod;
@@ -23,13 +27,14 @@ footer{
 }
 
 #side-bar{
-    width: 200px;
+    width: 225px;
     height: 100%;
-    background-color: aqua;
+    background-color: black;
+    color: white;
 }
 
 #content{
-    width: calc(100vw - 200px);
+    width: calc(100vw - 225px);
     overflow-y: auto;
 }
 
@@ -49,3 +54,30 @@ button{
     top: 50%;
     transform: translate(0%, -50%);
 }
+
+/* sidebar */
+
+.logo{
+    width: 80%;
+}
+
+#side-bar .logo{
+    padding: 15px;
+}
+
+.navigation{
+    font-size: 16px;
+}
+
+.navigation img{
+    width: 2em;
+}
+
+.navigation .navigation-pos{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+
