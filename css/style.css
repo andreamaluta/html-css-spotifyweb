@@ -31,12 +31,15 @@ footer{
     height: 100%;
     background-color: black;
     color: white;
+    position: relative;
 }
 
 #content{
     width: calc(100vw - 225px);
     overflow-y: auto;
 }
+
+
 
 /* header */
 
@@ -119,3 +122,36 @@ button{
     color: white;
 }
 
+/* sidebar foot */
+
+.side-bar-foot{
+    position: absolute;
+    bottom: 15px;
+    padding-left: 15px;
+    color: rgb(149, 149, 149);
+}
+
+.side-bar-foot .side-bar-foot-pos img{
+    width: 1.5em;
+    margin-right: 10px;
+}
+
+.side-bar-foot .profile{
+    font-weight: 800;
+}
+
+.side-bar-foot-pos, .profile{
+    display: flex;
+    align-items: center;
+}
+
+.side-bar-foot .profile img{
+    width: 2em;
+    margin-right: 10px;
+}
+
+.side-bar-foot hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 180px;
+}
