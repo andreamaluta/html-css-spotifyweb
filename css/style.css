@@ -23,7 +23,11 @@ header{
 
 footer{
     height: 100px;
+    width: 100vw;
     background-color: red;
+    position: sticky;
+    z-index: 1;
+    display: flex;
 }
 
 #side-bar{
@@ -31,7 +35,10 @@ footer{
     height: 100%;
     background-color: black;
     color: white;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 #content{
@@ -60,8 +67,23 @@ button{
 
 /* sidebar */
 
+.navigation-pos,
+.playlist ul li:first-child,
+.side-bar-foot-pos, 
+.profile{
+    display: flex;
+    align-items: center;
+}
+
 .logo{
     width: 80%;
+}
+
+.hidden-logo{
+    width: 2em;
+    margin-left: 15px;
+    margin-top: 5px;
+    display: none;
 }
 
 #side-bar .logo{
@@ -80,8 +102,6 @@ button{
 }
 
 .navigation .navigation-pos{
-    display: flex;
-    align-items: center;
     margin-top: 10px;
     padding-left: 15px;
 }
@@ -105,11 +125,6 @@ button{
     list-style: none;
 }
 
-.playlist ul li:first-child{
-    display: flex;
-    align-items: center;
-}
-
 .playlist ul li{
     margin-top: 15px;
     font-weight: 600;
@@ -125,8 +140,7 @@ button{
 /* sidebar foot */
 
 .side-bar-foot{
-    position: absolute;
-    bottom: 15px;
+    margin-bottom: 15px;
     padding-left: 15px;
     color: rgb(149, 149, 149);
 }
@@ -140,11 +154,6 @@ button{
     font-weight: 800;
 }
 
-.side-bar-foot-pos, .profile{
-    display: flex;
-    align-items: center;
-}
-
 .side-bar-foot .profile img{
     width: 2em;
     margin-right: 10px;
@@ -153,5 +162,52 @@ button{
 .side-bar-foot hr{
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 180px;
+    max-width: 180px;
+}
+
+
+/* footer */
+
+.footer-side-col{
+    width: 20%;
+}
+
+.footer-mid-col{
+    width: 60%;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 576px){
+    
+    #side-bar{
+        width: 60px;
+    }
+
+    #content{
+        width: calc(100vw - 60px);
+    }
+
+    .hidden-logo{
+        display: block;
+    }
+
+    .navigation span, 
+    .side-bar-foot span, 
+    .side-bar-foot hr,
+    .logo,
+    .playlist{
+        display: none;
+    }
+
+    .side-bar-foot-pos img{
+        margin-bottom: 10px;
+    }
+
+    .navigation-select,
+    .navigation-select-hidden{
+        border: none;
+    }
+
 }
