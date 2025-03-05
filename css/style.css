@@ -242,6 +242,27 @@ h2{
     margin-top: 5px;
 }
 
+.created-row{
+    width: 40%;
+    display: flex;
+}
+
+.created-card{
+    width: calc(100% / 2);
+    padding: 10px;
+}
+
+.created-card img{
+    width: 100%;
+}
+
+.created-card h3{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
 
 
 /* ---------------------footer------------------- */
