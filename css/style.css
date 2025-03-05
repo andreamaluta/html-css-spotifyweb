@@ -234,20 +234,20 @@ h2{
     font-size: 13px;
 }
 
-/* created section */
+/* created section and most listened section*/
 
-#suggerimenti{
+.paragraph{
     font-size: 13px;
     margin-left: 10px;
     margin-top: 5px;
 }
 
-.created-row{
+.created-row, .most-row{
     width: 40%;
     display: flex;
 }
 
-.created-card{
+.created-card, .most-card{
     width: calc(100% / 2);
     padding: 10px;
 }
@@ -256,14 +256,17 @@ h2{
     width: 100%;
 }
 
-.created-card h3{
+.created-card h3, .most-card h3{
     text-align: center;
     color: white;
     font-size: 15px;
     margin-top: 10px;
 }
 
-
+.most-card img{
+    width: 100%;
+    border-radius: 50%;
+}
 
 /* ---------------------footer------------------- */
 
