@@ -93,7 +93,7 @@ button{
 }
 
 .navigation{
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
     color: rgb(149, 149, 149);
 }
@@ -129,12 +129,12 @@ button{
 
 .playlist ul li{
     margin-top: 15px;
-    font-weight: 600;
+    font-size: 13px;
     color: rgb(149, 149, 149);
 }
 
 .playlist ul li i{
-    font-size: 2.5em;
+    font-size: 3em;
     margin-right: 5px;
     color: white;
 }
@@ -145,6 +145,10 @@ button{
     margin-bottom: 15px;
     padding-left: 15px;
     color: rgb(149, 149, 149);
+}
+
+.side-bar-foot .side-bar-foot-pos{
+    font-size: 13px;
 }
 
 .side-bar-foot .side-bar-foot-pos img{
@@ -193,7 +197,7 @@ button{
 
 .song > :last-child{
     display: flex;
-}
+} 
 
 #footer-name-song{
     font-weight: bold;
@@ -205,7 +209,7 @@ button{
 }
 
 .song img{
-    width: 30%;
+    width: 20%;
     margin-right: 15px;
 }
 
@@ -226,7 +230,7 @@ button{
 }
 
 #footer-play i{
-    margin: 10px 15px 0 15px;
+    margin: 15px 15px 0 15px;
     vertical-align: middle;
 }
 
@@ -234,8 +238,38 @@ button{
     font-size: 34px;
 }
 
+#time-bar{
+    align-self: center;
+   
+}
 
+#footer-timebar > :first-child{
+    margin-right: 15px;
+}
 
+#footer-timebar > :last-child{
+    margin-left: 15px;
+}
+
+.footer-mid-col > :last-child{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 15px;
+}
+
+#tb1{
+    width: 30vw;
+    background-color: aqua;
+    border-radius: 10px;
+    align-self: center;
+}
+
+#tb2{
+    width: 20%;
+    border-top: 5px solid rgb(149, 149, 149);
+    border-radius: 10px;
+}
 
 
 
