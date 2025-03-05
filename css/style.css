@@ -170,8 +170,10 @@ button{
 
 /* footer */
 
+/* left col */
+
 .footer-side-col{
-    width: 15%;
+    width: 20%;
     display: flex;
     align-items: center;
     margin: 15px;
@@ -211,9 +213,31 @@ button{
     margin: 0 10px;
 }
 
+/* mid col */
+
 .footer-mid-col{
-    width: 70%;
+    width: 60%;
 }
+
+#footer-play{
+    color: white;
+    text-align: center;
+    font-size: 19px;
+}
+
+#footer-play i{
+    margin: 10px 15px 0 15px;
+    vertical-align: middle;
+}
+
+#footer-play i:nth-child(3){
+    font-size: 34px;
+}
+
+
+
+
+
 
 
 /* media query */
