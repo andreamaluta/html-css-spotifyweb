@@ -206,7 +206,7 @@ h2{
 /* album */
 
 .row{
-    width: calc(100%);
+    width: 100%;
     margin: 20px 0;
     display: flex;
 }
@@ -392,6 +392,7 @@ h2{
     width: 80px;
     background-color: rgba(75,75,75,255);
     border-radius: 10px;
+    margin-right: 5px;
 }
 
 #vol2{
@@ -402,6 +403,33 @@ h2{
 
 
 /* media query */
+
+@media screen and (max-width: 1200px){
+    .row{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: calc(100%/4);
+    }
+}
+
+@media screen and (max-width: 992px){
+    
+    .row{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer-side-col i{
+        margin: 0 5px;
+    }
+}
 
 @media screen and (max-width: 576px){
     
@@ -453,8 +481,6 @@ h2{
 
 }
 
-@media screen and (max-width: 768px){
-    .footer-side-col i{
-        margin: 0 5px;
-    }
-}
+
+
+
