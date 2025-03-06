@@ -52,7 +52,7 @@ footer{
     display: flex;
 }
 
-/* header */
+/* ---------------header----------------- */
 
 button{
     padding: 12px 30px;
@@ -69,7 +69,7 @@ button{
     transform: translate(0%, -50%);
 }
 
-/* sidebar */
+/* ---------------sidebar-------------- */
 
 .navigation-pos,
 .playlist ul li:first-child,
@@ -291,7 +291,7 @@ h2{
 
 /* ---------------------footer------------------- */
 
-/* left col */
+/* ------left col--------- */
 
 .footer-side-col{
     width: 26%;
@@ -336,7 +336,7 @@ h2{
     margin: 0 10px;
 }
 
-/* mid col */
+/* ------mid col------ */
 
 .footer-mid-col{
     width: 48%;
@@ -355,7 +355,6 @@ h2{
 }
 
 #footer-play i{
-    /* margin: 15px 15px 0 15px; */
     padding: 10px 15px 0 15px;
 }
 
@@ -389,9 +388,7 @@ h2{
     border-radius: 10px;
     height: 5px;
     align-self: center;
-    display: flex;
-    align-items: center;
-    
+    position: relative;
 }
 
 #tb2{
@@ -402,7 +399,9 @@ h2{
 }
 
 .circle{
-    
+    position: absolute;
+    top: -2px;
+    left: 85px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -414,6 +413,7 @@ h2{
     font-size: 13px;
 }
 
+/* ------------right col--------- */
 
 .footer-side-col i{
     margin: 0 10px;
@@ -428,10 +428,9 @@ h2{
     width: 80px;
     background-color: rgba(75,75,75,255);
     border-radius: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
     height: 5px;
-    display: flex;
-    align-items: center;
+    position: relative;
 }
 
 #vol2{
@@ -440,10 +439,26 @@ h2{
     border-radius: 10px;
 }
 
+.circle2{
+    position: absolute;
+    top: -2px;
+    left: 18px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+}
+
+
 /* ------------------hover-------------------- */
 
 button:hover{
     padding: 15px 31px;
+}
+
+.logo:hover{
+    cursor: pointer;
 }
 
 .relative:hover img{
@@ -499,7 +514,7 @@ button:hover{
 }
 
 #tb1:hover .circle,
-#vol1:hover .circle{
+#vol1:hover .circle2{
     display: block;
     cursor: pointer;
 }
