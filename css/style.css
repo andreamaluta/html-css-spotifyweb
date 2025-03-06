@@ -19,6 +19,7 @@ header{
     background-color: rgba(8,11,18,0.8);
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 footer{
@@ -223,6 +224,20 @@ h2{
     width: 100%;
 }
 
+.relative{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    display: none;  
+}
+
 .card h3, .card p{
     text-align: center;
     margin-top: 10px;
@@ -403,6 +418,21 @@ h2{
     border-top: 5px solid rgb(149, 149, 149);
     border-radius: 10px;
 }
+
+/* hover */
+
+button:hover{
+    padding: 15px 31px;
+}
+
+.relative:hover img{
+    opacity: 0.5;
+}
+
+.relative:hover .overlay{
+    display: block;
+}
+
 
 
 /* media query */
