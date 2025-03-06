@@ -153,7 +153,8 @@ button{
 }
 
 .side-bar-foot .side-bar-foot-pos img{
-    width: 1.5em;
+    width: 2em;
+    padding: 5px;
     margin-right: 10px;
 }
 
@@ -352,7 +353,8 @@ h2{
 }
 
 #footer-play i{
-    margin: 15px 15px 0 15px;
+    /* margin: 15px 15px 0 15px; */
+    padding: 10px 15px 0 15px;
 }
 
 #footer-play i:nth-child(3){
@@ -384,12 +386,27 @@ h2{
     background-color: rgba(75,75,75,255);
     border-radius: 10px;
     align-self: center;
+    position: relative;
+    
 }
 
 #tb2{
     width: 20%;
     border-top: 5px solid rgb(149, 149, 149);
     border-radius: 10px;
+    
+}
+
+.circle{
+    position: absolute;
+    top: -2px;
+    left: 19%;
+    align-self: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
 }
 
 #footer-timebar span{
@@ -419,7 +436,7 @@ h2{
     border-radius: 10px;
 }
 
-/* hover */
+/* ------------------hover-------------------- */
 
 button:hover{
     padding: 15px 31px;
@@ -433,7 +450,59 @@ button:hover{
     display: block;
 }
 
+.most-card:hover img{
+    padding: 5px;
+}
 
+.side-bar-foot span:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.side-bar-foot img:hover{
+    padding: 2px;
+    cursor: pointer;
+}
+
+.menu ul li:hover,
+.navigation span:hover,
+.playlist ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#song-txt span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-icon i:hover{
+    color: white;
+}
+
+#footer-play i:nth-child(3):hover{
+    transform: scale(1.1);
+}
+
+#footer-play i:hover{
+    cursor: pointer;
+}
+
+#tb1:hover #tb2,
+#vol1:hover #vol2{
+    border-color: rgba(163,240,46);
+    cursor: pointer;
+}
+
+#tb1:hover .circle{
+    display: block;
+    cursor: pointer;
+}
+
+.footer-side-col i:hover{
+    color: white;
+    cursor: pointer;
+}
 
 /* media query */
 
