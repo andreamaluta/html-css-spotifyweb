@@ -39,6 +39,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: auto;
     
 }
 
@@ -121,6 +122,7 @@ button{
 
 .playlist{
     margin-top: 25px;
+    margin-bottom: 30px;
     padding-left: 15px;
 }
 
@@ -385,8 +387,10 @@ h2{
     width: 30vw;
     background-color: rgba(75,75,75,255);
     border-radius: 10px;
+    height: 5px;
     align-self: center;
-    position: relative;
+    display: flex;
+    align-items: center;
     
 }
 
@@ -394,14 +398,11 @@ h2{
     width: 20%;
     border-top: 5px solid rgb(149, 149, 149);
     border-radius: 10px;
-    
+
 }
 
 .circle{
-    position: absolute;
-    top: -2px;
-    left: 19%;
-    align-self: center;
+    
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -428,6 +429,9 @@ h2{
     background-color: rgba(75,75,75,255);
     border-radius: 10px;
     margin-right: 5px;
+    height: 5px;
+    display: flex;
+    align-items: center;
 }
 
 #vol2{
@@ -494,7 +498,8 @@ button:hover{
     cursor: pointer;
 }
 
-#tb1:hover .circle{
+#tb1:hover .circle,
+#vol1:hover .circle{
     display: block;
     cursor: pointer;
 }
@@ -593,7 +598,48 @@ button:hover{
         margin: 0 5px;
     }
 
+
 }
+
+@media screen and (max-width: 550px){
+    #vol-bar{
+        display: none;
+    }
+
+    .footer-side-col{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .footer-side-col i{
+        margin: 5px;
+    } 
+
+    .song img{
+        display: none;
+    }
+
+    #song-txt{
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+    #footer-play i:first-child,
+    #footer-play i:last-child{
+        display: none;
+    }
+
+    #footer-timebar span{
+        display: none;
+    }
+
+}
+
+
 
 
 
